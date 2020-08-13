@@ -2,11 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<<<<<<< HEAD
 <title>ISL_05_Resampling_Methods</title>
-=======
-<title>ISL_05</title>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13169,17 +13165,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># install.packages(&quot;ISLR&quot;)</span>
 <span class="n">library</span><span class="p">(</span><span class="n">ISLR</span><span class="p">)</span>
 <span class="nb">set</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">train</span><span class="o">=</span><span class="n">sample</span><span class="p">(</span><span class="mi">392</span><span class="p">,</span><span class="mi">196</span><span class="p">)</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="c1"># install.packages(&quot;ISLR&quot;)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">ISLR</span><span class="p">)</span>
-<span class="nf">set.seed</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
-<span class="n">train</span><span class="o">=</span><span class="nf">sample</span><span class="p">(</span><span class="m">392</span><span class="p">,</span><span class="m">196</span><span class="p">)</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 </pre></div>
 
     </div>
@@ -13192,11 +13181,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">attach</span><span class="p">(</span><span class="n">Auto</span><span class="p">)</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="nf">attach</span><span class="p">(</span><span class="n">Auto</span><span class="p">)</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 </pre></div>
 
     </div>
@@ -13231,15 +13216,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#linear regression</span>
 <span class="n">lm</span><span class="o">.</span><span class="n">fit</span><span class="o">=</span><span class="n">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
 <span class="n">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="n">predict</span><span class="p">(</span><span class="n">lm</span><span class="o">.</span><span class="n">fit</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="c1">#linear regression</span>
-<span class="n">lm.fit</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
-<span class="nf">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="m">2</span><span class="p">)</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 </pre></div>
 
     </div>
@@ -13271,21 +13250,12 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># polynomial regressions</span>
 <span class="n">lm</span><span class="o">.</span><span class="n">fit2</span><span class="o">=</span><span class="n">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
 <span class="n">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="n">predict</span><span class="p">(</span><span class="n">lm</span><span class="o">.</span><span class="n">fit2</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span>
 
 <span class="n">lm</span><span class="o">.</span><span class="n">fit3</span><span class="o">=</span><span class="n">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
 <span class="n">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="n">predict</span><span class="p">(</span><span class="n">lm</span><span class="o">.</span><span class="n">fit3</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="c1"># polynomial regressions</span>
-<span class="n">lm.fit2</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="nf">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="m">2</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
-<span class="nf">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit2</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="m">2</span><span class="p">)</span>
-
-<span class="n">lm.fit3</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="nf">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="m">3</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
-<span class="nf">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit3</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="m">2</span><span class="p">)</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 </pre></div>
 
     </div>
@@ -13329,7 +13299,6 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># use different training set</span>
 <span class="nb">set</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">train</span><span class="o">=</span><span class="n">sample</span><span class="p">(</span><span class="mi">392</span><span class="p">,</span><span class="mi">196</span><span class="p">)</span>
@@ -13342,20 +13311,6 @@ div#notebook {
 
 <span class="n">lm</span><span class="o">.</span><span class="n">fit3</span><span class="o">=</span><span class="n">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
 <span class="n">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="n">predict</span><span class="p">(</span><span class="n">lm</span><span class="o">.</span><span class="n">fit3</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="c1"># use different training set</span>
-<span class="nf">set.seed</span><span class="p">(</span><span class="m">2</span><span class="p">)</span>
-<span class="n">train</span><span class="o">=</span><span class="nf">sample</span><span class="p">(</span><span class="m">392</span><span class="p">,</span><span class="m">196</span><span class="p">)</span>
-
-<span class="n">lm.fit</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
-<span class="nf">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit</span><span class="p">,</span><span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="m">2</span><span class="p">)</span>
-
-<span class="n">lm.fit2</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="nf">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="m">2</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
-<span class="nf">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit2</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="m">2</span><span class="p">)</span>
-
-<span class="n">lm.fit3</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="nf">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="m">3</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
-<span class="nf">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit3</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="m">2</span><span class="p">)</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 </pre></div>
 
     </div>
@@ -13448,19 +13403,11 @@ $$ CV_{\left( n \right)} = \frac{1}{n} \sum_{i=1}^n MSE_i $$
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># lm and glm without passing in the family argument are identical</span>
 <span class="n">glm</span><span class="o">.</span><span class="n">fit</span><span class="o">=</span><span class="n">glm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
 <span class="n">coef</span><span class="p">(</span><span class="n">glm</span><span class="o">.</span><span class="n">fit</span><span class="p">)</span>
 <span class="n">lm</span><span class="o">.</span><span class="n">fit</span><span class="o">=</span><span class="n">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
 <span class="n">coef</span><span class="p">(</span><span class="n">lm</span><span class="o">.</span><span class="n">fit</span><span class="p">)</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="c1"># lm and glm without passing in the family argument are identical</span>
-<span class="n">glm.fit</span><span class="o">=</span><span class="nf">glm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
-<span class="nf">coef</span><span class="p">(</span><span class="n">glm.fit</span><span class="p">)</span>
-<span class="n">lm.fit</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
-<span class="nf">coef</span><span class="p">(</span><span class="n">lm.fit</span><span class="p">)</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 </pre></div>
 
     </div>
@@ -13516,17 +13463,10 @@ $$ CV_{\left( n \right)} = \frac{1}{n} \sum_{i=1}^n MSE_i $$
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">boot</span><span class="p">)</span>
 <span class="n">glm</span><span class="o">.</span><span class="n">fit</span><span class="o">=</span><span class="n">glm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
 <span class="n">cv</span><span class="o">.</span><span class="n">err</span><span class="o">=</span><span class="n">cv</span><span class="o">.</span><span class="n">glm</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">glm</span><span class="o">.</span><span class="n">fit</span><span class="p">)</span>
 <span class="n">cv</span><span class="o">.</span><span class="n">err</span><span class="err">$</span><span class="n">delta</span> <span class="c1"># delta vector contains cross-validation results:</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">boot</span><span class="p">)</span>
-<span class="n">glm.fit</span><span class="o">=</span><span class="nf">glm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
-<span class="n">cv.err</span><span class="o">=</span><span class="nf">cv.glm</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">glm.fit</span><span class="p">)</span>
-<span class="n">cv.err</span><span class="o">$</span><span class="n">delta</span> <span class="c1"># delta vector contains cross-validation results:</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 <span class="c1"># delta=[standard k-fold CV estimate, bias-corrected CV estimate]</span>
 </pre></div>
 
@@ -13565,7 +13505,6 @@ $$ CV_{\left( n \right)} = \frac{1}{n} \sum_{i=1}^n MSE_i $$
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># use for loop for polynomial regressions</span>
 <span class="n">cv</span><span class="o">.</span><span class="n">error</span><span class="o">=</span><span class="n">rep</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
 <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="ow">in</span> <span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
@@ -13573,15 +13512,6 @@ $$ CV_{\left( n \right)} = \frac{1}{n} \sum_{i=1}^n MSE_i $$
     <span class="n">cv</span><span class="o">.</span><span class="n">error</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">cv</span><span class="o">.</span><span class="n">glm</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">glm</span><span class="o">.</span><span class="n">fit</span><span class="p">)</span><span class="err">$</span><span class="n">delta</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">}</span>
 <span class="n">cv</span><span class="o">.</span><span class="n">error</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="c1"># use for loop for polynomial regressions</span>
-<span class="n">cv.error</span><span class="o">=</span><span class="nf">rep</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">5</span><span class="p">)</span>
-<span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">glm.fit</span><span class="o">=</span><span class="nf">glm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="nf">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="n">i</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
-    <span class="n">cv.error</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="nf">cv.glm</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">glm.fit</span><span class="p">)</span><span class="o">$</span><span class="n">delta</span><span class="p">[</span><span class="m">1</span><span class="p">]</span>
-<span class="p">}</span>
-<span class="n">cv.error</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 </pre></div>
 
     </div>
@@ -13635,11 +13565,7 @@ $$CV_{\left( k \right)} = \frac{1}{k} \sum_{i=1}^k MSE_i$$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>LOOCV vs. k-Fold CV</strong></p>
-<<<<<<< HEAD
 <p>LOOCV는 k-Fold CV의 하나의 특별한 케이스에 해당된다는 것을 볼 수 있습니다. 즉 LOOCV는 $k = n$일 때의 k-Fold CV와 같습니다.</p>
-=======
-<p>LOOCV는 k-Fold CV의 하나의 특별한 케이스에 해당된다는 것을 볼 수 있다. 즉 LOOCV는 $k = n$일 때의 k-Fold CV와 같다.</p>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 <p><img src="./pic/fig5-6.png" alt=""></p>
 <center>blue line =  true test MSE / black line =  LOOCV test MSE 추정치 / orange line = 10-fold CV test MSE 추정치</center>
 </div>
@@ -13650,13 +13576,8 @@ $$CV_{\left( k \right)} = \frac{1}{k} \sum_{i=1}^k MSE_i$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>장점</strong></p>
 <ol>
-<<<<<<< HEAD
 <li>k-Fold CV는 LOOCV에 비해 computational합니다.</li>
 <li>k-Fold CV는 LOOCV에 비해 더 정확한 test error의 추정치를 제공합니다. (5.1.4에서 상세 설명)</li>
-=======
-<li>k-Fold CV는 LOOCV에 비해 computational하다.</li>
-<li>k-Fold CV는 LOOCV에 비해 더 정확한 test error의 추정치를 제공한다. (5.1.4에서 상세 설명)</li>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 </ol>
 
 </div>
@@ -13675,7 +13596,6 @@ $$CV_{\left( k \right)} = \frac{1}{k} \sum_{i=1}^k MSE_i$$
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">set</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">17</span><span class="p">)</span>
 
 <span class="c1"># use k=10 and perform polynomial fits of orders one to ten</span>
@@ -13685,17 +13605,6 @@ $$CV_{\left( k \right)} = \frac{1}{k} \sum_{i=1}^k MSE_i$$
     <span class="n">cv</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="mi">10</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">cv</span><span class="o">.</span><span class="n">glm</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">glm</span><span class="o">.</span><span class="n">fit</span><span class="p">,</span> <span class="n">K</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span><span class="err">$</span><span class="n">delta</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">}</span>
 <span class="n">cv</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="mi">10</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="nf">set.seed</span><span class="p">(</span><span class="m">17</span><span class="p">)</span>
-
-<span class="c1"># use k=10 and perform polynomial fits of orders one to ten</span>
-<span class="n">cv.error.10</span><span class="o">=</span><span class="nf">rep</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">10</span><span class="p">)</span>
-<span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">){</span>
-    <span class="n">glm.fit</span><span class="o">=</span><span class="nf">glm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="nf">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="n">i</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
-    <span class="n">cv.error.10</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="nf">cv.glm</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">glm.fit</span><span class="p">,</span> <span class="n">K</span><span class="o">=</span><span class="m">10</span><span class="p">)</span><span class="o">$</span><span class="n">delta</span><span class="p">[</span><span class="m">1</span><span class="p">]</span>
-<span class="p">}</span>
-<span class="n">cv.error.10</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 <span class="c1"># much shorter computation time because cv.glm doesn&#39;t use the shortcut for LOOCV</span>
 </pre></div>
 
@@ -13795,7 +13704,6 @@ $$ SE_B \left( \hat{\alpha} \right) = \sqrt{\frac{1}{B-1} \sum_{r=1}^B \left(\ha
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Estimating the Accuracy of a Statistic of Interest</span>
 <span class="n">alpha</span><span class="o">.</span><span class="n">fn</span><span class="o">=</span><span class="n">function</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">index</span><span class="p">){</span>
     <span class="n">X</span><span class="o">=</span><span class="n">data</span><span class="err">$</span><span class="n">X</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
@@ -13812,29 +13720,10 @@ $$ SE_B \left( \hat{\alpha} \right) = \sqrt{\frac{1}{B-1} \sum_{r=1}^B \left(\ha
 
 <span class="c1"># use boot function R=1000</span>
 <span class="n">boot</span><span class="p">(</span><span class="n">Portfolio</span><span class="p">,</span> <span class="n">alpha</span><span class="o">.</span><span class="n">fn</span><span class="p">,</span> <span class="n">R</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="c1">## Estimating the Accuracy of a Statistic of Interest</span>
-<span class="n">alpha.fn</span><span class="o">=</span><span class="nf">function</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">index</span><span class="p">){</span>
-    <span class="n">X</span><span class="o">=</span><span class="n">data</span><span class="o">$</span><span class="n">X</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
-    <span class="n">Y</span><span class="o">=</span><span class="n">data</span><span class="o">$</span><span class="n">Y</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
-    <span class="nf">return </span><span class="p">((</span><span class="nf">var</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span><span class="o">-</span><span class="nf">cov</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="o">+</span><span class="nf">var</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span><span class="m">-2</span><span class="o">*</span><span class="nf">cov</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">)))</span>
-<span class="p">}</span>
-
-<span class="c1"># use all 100 obs</span>
-<span class="nf">alpha.fn</span><span class="p">(</span><span class="n">Portfolio</span><span class="p">,</span> <span class="m">1</span><span class="o">:</span><span class="m">100</span><span class="p">)</span>
-
-<span class="c1"># use sample function for bootstrap sampling</span>
-<span class="nf">set.seed</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
-<span class="nf">alpha.fn</span><span class="p">(</span><span class="n">Portfolio</span><span class="p">,</span> <span class="nf">sample</span><span class="p">(</span><span class="m">100</span><span class="p">,</span> <span class="m">100</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">T</span><span class="p">))</span> <span class="c1">#select 100 obs from range 1 to 100 with replacement</span>
-
-<span class="c1"># use boot function R=1000</span>
-<span class="nf">boot</span><span class="p">(</span><span class="n">Portfolio</span><span class="p">,</span> <span class="n">alpha.fn</span><span class="p">,</span> <span class="n">R</span><span class="o">=</span><span class="m">1000</span><span class="p">)</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 
 <span class="c1">## Estimating the Accuracy of a Linear Regression Model</span>
 
 <span class="c1"># estimates of parameters usual linear regression</span>
-<<<<<<< HEAD
 <span class="n">boot</span><span class="o">.</span><span class="n">fn</span><span class="o">=</span><span class="n">function</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">coef</span><span class="p">(</span><span class="n">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">index</span><span class="p">)))</span>
 <span class="n">boot</span><span class="o">.</span><span class="n">fn</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">392</span><span class="p">)</span>
@@ -13855,28 +13744,6 @@ $$ SE_B \left( \hat{\alpha} \right) = \sqrt{\frac{1}{B-1} \sum_{r=1}^B \left(\ha
 <span class="nb">set</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">boot</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">boot</span><span class="o">.</span><span class="n">fn</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
 <span class="n">summary</span><span class="p">(</span><span class="n">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="o">+</span><span class="n">I</span><span class="p">(</span><span class="n">horsepower</span><span class="o">^</span><span class="mi">2</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">))</span><span class="err">$</span><span class="n">coef</span>
-=======
-<span class="n">boot.fn</span><span class="o">=</span><span class="nf">function</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
-    <span class="nf">return </span><span class="p">(</span><span class="nf">coef</span><span class="p">(</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">index</span><span class="p">)))</span>
-<span class="nf">boot.fn</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="m">1</span><span class="o">:</span><span class="m">392</span><span class="p">)</span>
-
-<span class="c1"># create bootstrap estimates </span>
-<span class="nf">set.seed</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
-<span class="nf">boot.fn</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="nf">sample</span><span class="p">(</span><span class="m">392</span><span class="p">,</span> <span class="m">392</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">T</span><span class="p">))</span>
-<span class="nf">boot.fn</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="nf">sample</span><span class="p">(</span><span class="m">392</span><span class="p">,</span> <span class="m">392</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">T</span><span class="p">))</span>
-
-<span class="c1"># compute SE of 1000 bootstrap estimates</span>
-<span class="nf">boot</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">boot.fn</span><span class="p">,</span> <span class="m">1000</span><span class="p">)</span>
-
-<span class="nf">summary</span><span class="p">(</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">))</span><span class="o">$</span><span class="n">coef</span>
-
-<span class="c1"># bootstrap for quadratic model</span>
-<span class="n">boot.fn</span><span class="o">=</span><span class="nf">function</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
-    <span class="nf">coefficients</span><span class="p">(</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="o">+</span><span class="nf">I</span><span class="p">(</span><span class="n">horsepower</span><span class="o">^</span><span class="m">2</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">index</span><span class="p">))</span>
-<span class="nf">set.seed</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
-<span class="nf">boot</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">boot.fn</span><span class="p">,</span> <span class="m">1000</span><span class="p">)</span>
-<span class="nf">summary</span><span class="p">(</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="o">+</span><span class="nf">I</span><span class="p">(</span><span class="n">horsepower</span><span class="o">^</span><span class="m">2</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">))</span><span class="o">$</span><span class="n">coef</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 </pre></div>
 
     </div>
@@ -14105,7 +13972,6 @@ t3*  0.001230536  2.840324e-06 0.0001172164</pre>
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># install.packages(&quot;ISLR&quot;)</span>
 <span class="n">library</span><span class="p">(</span><span class="n">ISLR</span><span class="p">)</span>
 <span class="nb">set</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -14136,38 +14002,6 @@ t3*  0.001230536  2.840324e-06 0.0001172164</pre>
 
 <span class="n">lm</span><span class="o">.</span><span class="n">fit3</span><span class="o">=</span><span class="n">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
 <span class="n">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="n">predict</span><span class="p">(</span><span class="n">lm</span><span class="o">.</span><span class="n">fit3</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="c1"># install.packages(&quot;ISLR&quot;)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">ISLR</span><span class="p">)</span>
-<span class="nf">set.seed</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
-<span class="n">train</span><span class="o">=</span><span class="nf">sample</span><span class="p">(</span><span class="m">392</span><span class="p">,</span><span class="m">196</span><span class="p">)</span>
-
-<span class="c1"># linear regression</span>
-<span class="n">lm.fit</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
-
-<span class="nf">attach</span><span class="p">(</span><span class="n">Auto</span><span class="p">)</span>
-<span class="nf">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="m">2</span><span class="p">)</span>
-
-<span class="c1"># polynomial regressions</span>
-<span class="n">lm.fit2</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="nf">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="m">2</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
-<span class="nf">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit2</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="m">2</span><span class="p">)</span>
-
-<span class="n">lm.fit3</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="nf">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="m">3</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
-<span class="nf">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit3</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="m">2</span><span class="p">)</span>
-
-<span class="c1"># use different training set</span>
-<span class="nf">set.seed</span><span class="p">(</span><span class="m">2</span><span class="p">)</span>
-<span class="n">train</span><span class="o">=</span><span class="nf">sample</span><span class="p">(</span><span class="m">392</span><span class="p">,</span><span class="m">196</span><span class="p">)</span>
-
-<span class="n">lm.fit</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
-<span class="nf">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit</span><span class="p">,</span><span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="m">2</span><span class="p">)</span>
-
-<span class="n">lm.fit2</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="nf">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="m">2</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
-<span class="nf">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit2</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="m">2</span><span class="p">)</span>
-
-<span class="n">lm.fit3</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="nf">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="m">3</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">train</span><span class="p">)</span>
-<span class="nf">mean</span><span class="p">((</span><span class="n">mpg</span><span class="o">-</span><span class="nf">predict</span><span class="p">(</span><span class="n">lm.fit3</span><span class="p">,</span> <span class="n">Auto</span><span class="p">))[</span><span class="o">-</span><span class="n">train</span><span class="p">]</span><span class="o">^</span><span class="m">2</span><span class="p">)</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 </pre></div>
 
     </div>
@@ -14287,7 +14121,6 @@ The following object is masked from package:ggplot2:
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># lm and glm without passing in the family argument are identical</span>
 <span class="n">glm</span><span class="o">.</span><span class="n">fit</span><span class="o">=</span><span class="n">glm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
 <span class="n">coef</span><span class="p">(</span><span class="n">glm</span><span class="o">.</span><span class="n">fit</span><span class="p">)</span>
@@ -14308,28 +14141,6 @@ The following object is masked from package:ggplot2:
     <span class="n">cv</span><span class="o">.</span><span class="n">error</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">cv</span><span class="o">.</span><span class="n">glm</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">glm</span><span class="o">.</span><span class="n">fit</span><span class="p">)</span><span class="err">$</span><span class="n">delta</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">}</span>
 <span class="n">cv</span><span class="o">.</span><span class="n">error</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="c1"># lm and glm without passing in the family argument are identical</span>
-<span class="n">glm.fit</span><span class="o">=</span><span class="nf">glm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
-<span class="nf">coef</span><span class="p">(</span><span class="n">glm.fit</span><span class="p">)</span>
-
-<span class="n">lm.fit</span><span class="o">=</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
-<span class="nf">coef</span><span class="p">(</span><span class="n">lm.fit</span><span class="p">)</span>
-
-<span class="nf">library</span><span class="p">(</span><span class="n">boot</span><span class="p">)</span>
-<span class="n">glm.fit</span><span class="o">=</span><span class="nf">glm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
-<span class="n">cv.err</span><span class="o">=</span><span class="nf">cv.glm</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">glm.fit</span><span class="p">)</span>
-<span class="n">cv.err</span><span class="o">$</span><span class="n">delta</span> <span class="c1"># delta vector contains cross-validation results:</span>
-<span class="c1"># delta=[standard k-fold CV estimate, bias-corrected CV estimate]</span>
-
-<span class="c1"># use for loop for polynomial regressions</span>
-<span class="n">cv.error</span><span class="o">=</span><span class="nf">rep</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">5</span><span class="p">)</span>
-<span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">glm.fit</span><span class="o">=</span><span class="nf">glm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="nf">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="n">i</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
-    <span class="n">cv.error</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="nf">cv.glm</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">glm.fit</span><span class="p">)</span><span class="o">$</span><span class="n">delta</span><span class="p">[</span><span class="m">1</span><span class="p">]</span>
-<span class="p">}</span>
-<span class="n">cv.error</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 </pre></div>
 
     </div>
@@ -14428,7 +14239,6 @@ The following object is masked from package:ggplot2:
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">set</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">17</span><span class="p">)</span>
 
 <span class="c1"># use k=10 and perform polynomial fits of orders one to ten</span>
@@ -14438,17 +14248,6 @@ The following object is masked from package:ggplot2:
     <span class="n">cv</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="mi">10</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">cv</span><span class="o">.</span><span class="n">glm</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">glm</span><span class="o">.</span><span class="n">fit</span><span class="p">,</span> <span class="n">K</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span><span class="err">$</span><span class="n">delta</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">}</span>
 <span class="n">cv</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="mi">10</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="nf">set.seed</span><span class="p">(</span><span class="m">17</span><span class="p">)</span>
-
-<span class="c1"># use k=10 and perform polynomial fits of orders one to ten</span>
-<span class="n">cv.error.10</span><span class="o">=</span><span class="nf">rep</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">10</span><span class="p">)</span>
-<span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">){</span>
-    <span class="n">glm.fit</span><span class="o">=</span><span class="nf">glm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="nf">poly</span><span class="p">(</span><span class="n">horsepower</span><span class="p">,</span><span class="n">i</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">)</span>
-    <span class="n">cv.error.10</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="nf">cv.glm</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">glm.fit</span><span class="p">,</span> <span class="n">K</span><span class="o">=</span><span class="m">10</span><span class="p">)</span><span class="o">$</span><span class="n">delta</span><span class="p">[</span><span class="m">1</span><span class="p">]</span>
-<span class="p">}</span>
-<span class="n">cv.error.10</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 <span class="c1"># much shorter computation time because cv.glm doesn&#39;t use the shortcut for LOOCV</span>
 </pre></div>
 
@@ -14494,7 +14293,6 @@ The following object is masked from package:ggplot2:
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Estimating the Accuracy of a Statistic of Interest</span>
 <span class="n">alpha</span><span class="o">.</span><span class="n">fn</span><span class="o">=</span><span class="n">function</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">index</span><span class="p">){</span>
     <span class="n">X</span><span class="o">=</span><span class="n">data</span><span class="err">$</span><span class="n">X</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
@@ -14511,29 +14309,10 @@ The following object is masked from package:ggplot2:
 
 <span class="c1"># use boot function R=1000</span>
 <span class="n">boot</span><span class="p">(</span><span class="n">Portfolio</span><span class="p">,</span> <span class="n">alpha</span><span class="o">.</span><span class="n">fn</span><span class="p">,</span> <span class="n">R</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
-=======
-<div class=" highlight hl-r"><pre><span></span><span class="c1">## Estimating the Accuracy of a Statistic of Interest</span>
-<span class="n">alpha.fn</span><span class="o">=</span><span class="nf">function</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">index</span><span class="p">){</span>
-    <span class="n">X</span><span class="o">=</span><span class="n">data</span><span class="o">$</span><span class="n">X</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
-    <span class="n">Y</span><span class="o">=</span><span class="n">data</span><span class="o">$</span><span class="n">Y</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
-    <span class="nf">return </span><span class="p">((</span><span class="nf">var</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span><span class="o">-</span><span class="nf">cov</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="o">+</span><span class="nf">var</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span><span class="m">-2</span><span class="o">*</span><span class="nf">cov</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">)))</span>
-<span class="p">}</span>
-
-<span class="c1"># use all 100 obs</span>
-<span class="nf">alpha.fn</span><span class="p">(</span><span class="n">Portfolio</span><span class="p">,</span> <span class="m">1</span><span class="o">:</span><span class="m">100</span><span class="p">)</span>
-
-<span class="c1"># use sample function for bootstrap sampling</span>
-<span class="nf">set.seed</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
-<span class="nf">alpha.fn</span><span class="p">(</span><span class="n">Portfolio</span><span class="p">,</span> <span class="nf">sample</span><span class="p">(</span><span class="m">100</span><span class="p">,</span> <span class="m">100</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">T</span><span class="p">))</span> <span class="c1">#select 100 obs from range 1 to 100 with replacement</span>
-
-<span class="c1"># use boot function R=1000</span>
-<span class="nf">boot</span><span class="p">(</span><span class="n">Portfolio</span><span class="p">,</span> <span class="n">alpha.fn</span><span class="p">,</span> <span class="n">R</span><span class="o">=</span><span class="m">1000</span><span class="p">)</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 
 <span class="c1">## Estimating the Accuracy of a Linear Regression Model</span>
 
 <span class="c1"># estimates of parameters usual linear regression</span>
-<<<<<<< HEAD
 <span class="n">boot</span><span class="o">.</span><span class="n">fn</span><span class="o">=</span><span class="n">function</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">coef</span><span class="p">(</span><span class="n">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">index</span><span class="p">)))</span>
 <span class="n">boot</span><span class="o">.</span><span class="n">fn</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">392</span><span class="p">)</span>
@@ -14554,28 +14333,6 @@ The following object is masked from package:ggplot2:
 <span class="nb">set</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">boot</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">boot</span><span class="o">.</span><span class="n">fn</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
 <span class="n">summary</span><span class="p">(</span><span class="n">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="o">+</span><span class="n">I</span><span class="p">(</span><span class="n">horsepower</span><span class="o">^</span><span class="mi">2</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">))</span><span class="err">$</span><span class="n">coef</span>
-=======
-<span class="n">boot.fn</span><span class="o">=</span><span class="nf">function</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
-    <span class="nf">return </span><span class="p">(</span><span class="nf">coef</span><span class="p">(</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">index</span><span class="p">)))</span>
-<span class="nf">boot.fn</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="m">1</span><span class="o">:</span><span class="m">392</span><span class="p">)</span>
-
-<span class="c1"># create bootstrap estimates </span>
-<span class="nf">set.seed</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
-<span class="nf">boot.fn</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="nf">sample</span><span class="p">(</span><span class="m">392</span><span class="p">,</span> <span class="m">392</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">T</span><span class="p">))</span>
-<span class="nf">boot.fn</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="nf">sample</span><span class="p">(</span><span class="m">392</span><span class="p">,</span> <span class="m">392</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">T</span><span class="p">))</span>
-
-<span class="c1"># compute SE of 1000 bootstrap estimates</span>
-<span class="nf">boot</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">boot.fn</span><span class="p">,</span> <span class="m">1000</span><span class="p">)</span>
-
-<span class="nf">summary</span><span class="p">(</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">))</span><span class="o">$</span><span class="n">coef</span>
-
-<span class="c1"># bootstrap for quadratic model</span>
-<span class="n">boot.fn</span><span class="o">=</span><span class="nf">function</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
-    <span class="nf">coefficients</span><span class="p">(</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="o">+</span><span class="nf">I</span><span class="p">(</span><span class="n">horsepower</span><span class="o">^</span><span class="m">2</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="n">index</span><span class="p">))</span>
-<span class="nf">set.seed</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
-<span class="nf">boot</span><span class="p">(</span><span class="n">Auto</span><span class="p">,</span> <span class="n">boot.fn</span><span class="p">,</span> <span class="m">1000</span><span class="p">)</span>
-<span class="nf">summary</span><span class="p">(</span><span class="nf">lm</span><span class="p">(</span><span class="n">mpg</span><span class="o">~</span><span class="n">horsepower</span><span class="o">+</span><span class="nf">I</span><span class="p">(</span><span class="n">horsepower</span><span class="o">^</span><span class="m">2</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">Auto</span><span class="p">))</span><span class="o">$</span><span class="n">coef</span>
->>>>>>> c3b48e2e731ea40016100f80a9306e9b01c96bb0
 </pre></div>
 
     </div>
