@@ -15,6 +15,13 @@
 발표자료는 Pytorchzerotoall, 모두의딥러닝시즌2 - PyTorch를 기반으로 합니다.
 부족한 이론이나 수식등을 채우셔서 ipynb 혹은 ppt 파일을 만드셔서 발표하시면 됩니다.
 
+## Study
+머신러닝 스터디 <br>
+베이즈 스터디 <br>
+케라스 스터디 <br>
+시각화 스터디 <br>
+알고리즘 스터디
+
 ## DataAnalysis
 사이트 : https://www.bigcontest.or.kr/ <br>
 설명회 : https://www.youtube.com/channel/UCvhnZbNn3LHC_smgs-7fpRQ/
