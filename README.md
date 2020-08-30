@@ -48,8 +48,21 @@ https://youtu.be/qgnLdphW-AY
 [ESC 2020-2] 200808 Data Analysis Process <br>
 https://youtu.be/r4R7i_58cbY
 
+[ESC 2020-2] 200813 Deep Learning <br>
+https://youtu.be/kI6R9pcXQGc
+
 [ESC 2020-2] 200820 Deep Learning <br>
 https://youtu.be/O6BWFmOAwV0
 
 [ESC 2020-2] 200822 Data Analysis Process <br>
 https://youtu.be/iqJBStIIhck
+
+[ESC 2020-2] 200827 Deep Learning <br>
+https://youtu.be/z8DdRGKx1eM
+
++) 추가 영상
+[ESC 2020-2] 200820 시각화스터디 Tableau <br>
+https://youtu.be/gBc_s2BeZUk
+
+[ESC 2020-2] 200825 CV/NLP 학술부 스터디 <br>
+https://youtu.be/2k2Ju40-MG8
