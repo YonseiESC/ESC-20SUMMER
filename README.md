@@ -33,3 +33,23 @@
 5조 : 야구 <br>
 6조 : 홈쇼핑 <br>
 7조 : 야구
+
+## 세션 영상 유튜브 링크
+
+[ESC 2020-2] 200725 Data Analysis Process <br>
+https://youtu.be/RTuzrI5poGU
+
+[ESC 2020-2] 200730 Deep Learning <br>
+https://youtu.be/EC9VhYfSWRM
+
+[ESC 2020-2] 200806 Deep Learning <br>
+https://youtu.be/qgnLdphW-AY
+
+[ESC 2020-2] 200808 Data Analysis Process <br>
+https://youtu.be/r4R7i_58cbY
+
+[ESC 2020-2] 200820 Deep Learning <br>
+https://youtu.be/O6BWFmOAwV0
+
+[ESC 2020-2] 200822 Data Analysis Process <br>
+https://youtu.be/iqJBStIIhck
